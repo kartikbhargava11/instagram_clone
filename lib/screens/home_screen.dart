@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
+import './chat_screen.dart';
+
 import '../widgets/stories.dart';
 import '../widgets/post_container.dart';
 
@@ -33,7 +35,9 @@ class HomeScreen extends StatelessWidget {
                 iconSize: 32.0,
               ),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const ChatScreen()));
+                },
                 icon: const Icon(MdiIcons.facebookMessenger, color: Colors.black),
                 iconSize: 32.0,
               )

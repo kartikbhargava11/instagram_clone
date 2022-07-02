@@ -4,7 +4,8 @@ import '../models/post.dart';
 
 
 final User currentUser = User(
-  name: 'virat.kohli',
+  name: 'Vesper Lyndd',
+  username: 'vesper.lyndd',
   imageUrl:
   'https://images.unsplash.com/photo-1578133671540-edad0b3d689e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80',
 );
@@ -12,99 +13,258 @@ final User currentUser = User(
 final List<User> onlineUsers = [
   User(
     name: 'David Brooks',
+    username: 'david_brooks_007',
     imageUrl:
     'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'Jane Doe',
+    username: 'jane_doe',
     imageUrl:
     'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'Matthew Hinkle',
+    username: 'matthew_hinkle',
     imageUrl:
     'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
   ),
   User(
     name: 'Amy Smith',
+    username: 'amy_smith',
     imageUrl:
     'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
   ),
   User(
     name: 'Ed Morris',
+    username: 'ed_morris',
     imageUrl:
     'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
   ),
   User(
     name: 'Carolyn Duncan',
+    username: 'carolyn_duncan',
     imageUrl:
     'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'Paul Pinnock',
+    username: 'p_pinnock',
     imageUrl:
     'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
   ),
   User(
       name: 'Elizabeth Wong',
+      username: 'elizabeth_wong',
       imageUrl:
       'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'),
   User(
     name: 'James Lathrop',
+    username: 'james_lathrop',
     imageUrl:
     'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
   ),
   User(
     name: 'Jessie Samson',
+    username: 'jessie_samson',
     imageUrl:
     'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'David Brooks',
+    username: 'david_brooks_007',
     imageUrl:
     'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'Jane Doe',
+    username: 'jane_doe',
     imageUrl:
     'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'Matthew Hinkle',
+    username: 'matthew_hinkle',
     imageUrl:
     'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
   ),
   User(
     name: 'Amy Smith',
+    username: 'amy_smith',
     imageUrl:
     'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
   ),
   User(
     name: 'Ed Morris',
+    username: 'ed_morris',
     imageUrl:
     'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
   ),
   User(
     name: 'Carolyn Duncan',
+    username: 'carolyn_duncan',
     imageUrl:
     'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),
   User(
     name: 'Paul Pinnock',
+    username: 'p_pinnock',
     imageUrl:
     'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
   ),
   User(
       name: 'Elizabeth Wong',
+      username: 'elizabeth_wong',
       imageUrl:
       'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'),
   User(
     name: 'James Lathrop',
+    username: 'james_lathrop',
     imageUrl:
     'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
   ),
   User(
     name: 'Jessie Samson',
+    username: 'jessie_samson',
+    imageUrl:
+    'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+];
+
+final List<User> chatList = [
+  User(
+    name: 'David Brooks',
+    username: 'david_brooks_007',
+    imageUrl:
+    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'Jane Doe',
+    username: 'jane_doe',
+    online: false,
+    lastOnline: '5 hours ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'Matthew Hinkle',
+    username: 'matthew_hinkle',
+    imageUrl:
+    'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
+  ),
+  User(
+    name: 'Amy Smith',
+    username: 'amy_smith',
+    imageUrl:
+    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
+  ),
+  User(
+    name: 'Ed Morris',
+    username: 'ed_morris',
+    imageUrl:
+    'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
+  ),
+  User(
+    name: 'Carolyn Duncan',
+    username: 'carolyn_duncan',
+    online: false,
+    lastOnline: '1 hour ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'Paul Pinnock',
+    username: 'p_pinnock',
+    online: false,
+    lastOnline: '1 day ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  ),
+  User(
+    name: 'Elizabeth Wong',
+    username: 'elizabeth_wong',
+    online: false,
+    lastOnline: '16 hours ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'
+  ),
+  User(
+    name: 'James Lathrop',
+    username: 'james_lathrop',
+    imageUrl:
+    'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
+  ),
+  User(
+    name: 'Jessie Samson',
+    username: 'jessie_samson',
+    imageUrl:
+    'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'David Brooks',
+    username: 'david_brooks_007',
+    imageUrl:
+    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'Jane Doe',
+    username: 'jane_doe',
+    online: false,
+    lastOnline: '5 hours ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'Matthew Hinkle',
+    username: 'matthew_hinkle',
+    imageUrl:
+    'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
+  ),
+  User(
+    name: 'Amy Smith',
+    username: 'amy_smith',
+    imageUrl:
+    'https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80',
+  ),
+  User(
+    name: 'Ed Morris',
+    username: 'ed_morris',
+    imageUrl:
+    'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
+  ),
+  User(
+    name: 'Carolyn Duncan',
+    username: 'carolyn_duncan',
+    online: false,
+    lastOnline: '1 hour ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+  ),
+  User(
+    name: 'Paul Pinnock',
+    username: 'p_pinnock',
+    online: false,
+    lastOnline: '1 day ago',
+    imageUrl:
+    'https://images.unsplash.com/photo-1519631128182-433895475ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+  ),
+  User(
+      name: 'Elizabeth Wong',
+      username: 'elizabeth_wong',
+      online: false,
+      lastOnline: '16 hours ago',
+      imageUrl:
+      'https://images.unsplash.com/photo-1515077678510-ce3bdf418862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=675&q=80'
+  ),
+  User(
+    name: 'James Lathrop',
+    username: 'james_lathrop',
+    imageUrl:
+    'https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=592&q=80',
+  ),
+  User(
+    name: 'Jessie Samson',
+    username: 'jessie_samson',
     imageUrl:
     'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
   ),

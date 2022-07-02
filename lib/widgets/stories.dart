@@ -144,7 +144,7 @@ class _StoryViewer extends StatelessWidget {
             height: 5.0,
           ),
           Text(
-            story.user.name,
+            story.user.username,
             style: const TextStyle(
               fontSize: 14.0,
               letterSpacing: -1.2,

@@ -155,21 +155,21 @@ class _PostHeader extends StatelessWidget {
     return Row(
       children: [
         CircleAvatar(
-          radius: 20,
+          radius: 18,
           backgroundImage: NetworkImage(
             post.user.imageUrl
           ),
         ),
         const SizedBox(
-          width: 5.0,
+          width: 8.0,
         ),
         Text(
-          post.user.name
+          post.user.username
         ),
         const Spacer(),
         IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.more_horiz
           ),
         )

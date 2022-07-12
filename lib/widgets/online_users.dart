@@ -66,14 +66,12 @@ class _CircularBox extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 4.0,
+            height: 8.0,
           ),
           Text(
             user.name,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              fontSize: 12.0
-            ),
+            style: Theme.of(context).textTheme.bodyText2
           )
         ],
       ),

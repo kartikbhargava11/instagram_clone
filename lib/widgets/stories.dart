@@ -14,7 +14,7 @@ class Stories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 120,
+      height: 110,
       child: ListView.builder(
         itemCount: stories.length + 1,
         scrollDirection: Axis.horizontal,
@@ -81,14 +81,11 @@ class _AddStory extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 5.0,
+              height: 8.0,
             ),
-            const Text(
+            Text(
               "Add Story",
-              style: TextStyle(
-                fontSize: 14.0,
-                letterSpacing: -1.2,
-              ),
+              style: Theme.of(context).textTheme.bodyText2,
               overflow: TextOverflow.ellipsis,
             )
           ],
@@ -141,14 +138,11 @@ class _StoryViewer extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 5.0,
+            height: 8.0,
           ),
           Text(
             story.user.username,
-            style: const TextStyle(
-              fontSize: 14.0,
-              letterSpacing: -1.2,
-            ),
+            style: Theme.of(context).textTheme.bodyText2,
             overflow: TextOverflow.ellipsis,
           )
         ],

@@ -18,10 +18,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        iconTheme: const IconThemeData(
-          color: Colors.black,
-        ),
-        backgroundColor: Colors.white,
         title: const Image(
           image: NetworkImage(
               "https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
@@ -32,14 +28,14 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.add_box_outlined, color: Colors.black),
+            icon: const Icon(Icons.add_box_outlined),
             iconSize: 32.0,
           ),
           IconButton(
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (_) => const ChatScreen()));
             },
-            icon: const Icon(MdiIcons.facebookMessenger, color: Colors.black),
+            icon: const Icon(MdiIcons.facebookMessenger),
             iconSize: 32.0,
           )
         ],

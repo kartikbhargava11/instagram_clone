@@ -56,9 +56,7 @@ class _PostStats extends StatelessWidget {
       children: [
         Text(
           "${post.likes} likes",
-          style: const TextStyle(
-            fontWeight: FontWeight.bold
-          ),
+          style: Theme.of(context).textTheme.headline6,
         ),
         const SizedBox(
           height: 5.0,
@@ -67,15 +65,14 @@ class _PostStats extends StatelessWidget {
           children: [
             Text(
               post.user.name,
-              style: const TextStyle(
-                fontWeight: FontWeight.bold
-              ),
+              style: Theme.of(context).textTheme.headline6
             ),
             const SizedBox(
               width: 2.0,
             ),
             Text(
-              post.caption
+              post.caption,
+              style: Theme.of(context).textTheme.caption
             )
           ],
         ),
@@ -164,7 +161,8 @@ class _PostHeader extends StatelessWidget {
           width: 8.0,
         ),
         Text(
-          post.user.username
+          post.user.username,
+          style: Theme.of(context).textTheme.headline6,
         ),
         const Spacer(),
         IconButton(

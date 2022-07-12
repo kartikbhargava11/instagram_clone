@@ -6,26 +6,21 @@ class Messages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Row(
-          children: const [
-            Text(
-              "Messages",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 16.0
-              )
-            ),
-            Spacer(),
-            Text(
-              "Requests",
-              style: TextStyle(
-                color: Colors.grey
-              )
-            )
-          ],
+        Text(
+          "Messages",
+          style: Theme.of(context).textTheme.headline5,
         ),
+        const Spacer(),
+        const Text(
+          "Requests",
+          style: TextStyle(
+            fontSize: 12.0,
+            color: Colors.grey
+          )
+        )
       ],
     );
   }

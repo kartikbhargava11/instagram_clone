@@ -15,16 +15,7 @@ class ChatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        iconTheme: const IconThemeData(
-          color: Colors.black,
-        ),
-        backgroundColor: Colors.white,
         elevation: 0.0,
-        titleTextStyle: const TextStyle(
-          color: Colors.black,
-          fontSize: 24.0,
-          fontWeight: FontWeight.bold
-        ),
         title: Text(
           currentUser.name,
         ),
@@ -33,7 +24,6 @@ class ChatScreen extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               Icons.video_call_outlined,
-              color: Colors.black,
             ),
             iconSize: 32.0,
           ),
@@ -41,7 +31,6 @@ class ChatScreen extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               Icons.edit_note_outlined,
-              color: Colors.black,
             ),
             iconSize: 32.0,
           )

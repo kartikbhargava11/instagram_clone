@@ -28,6 +28,7 @@ class ChatBox extends StatelessWidget {
             children: [
               Text(
                 user.name,
+                style: Theme.of(context).textTheme.caption,
               ),
               const SizedBox(
                 height: 2.0,

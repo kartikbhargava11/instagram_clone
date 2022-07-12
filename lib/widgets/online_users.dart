@@ -34,6 +34,8 @@ class _CircularBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = MediaQuery.of(context).platformBrightness;
+    final isDarkMode = brightness == Brightness.dark;
     return SizedBox(
       height: 75,
       width: 75,
@@ -51,14 +53,14 @@ class _CircularBox extends StatelessWidget {
                 bottom: 0,
                 right: 0,
                 child: Container(
-                  width: 15,
-                  height: 15,
+                  width: 18,
+                  height: 18,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.green,
                     border: Border.all(
-                      color: Colors.white,
-                      width: 3.0,
+                      color: isDarkMode ? Colors.black : Colors.white,
+                      width: 4.0,
                     )
                   ),
                 )

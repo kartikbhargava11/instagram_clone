@@ -50,6 +50,8 @@ class _AddStory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = MediaQuery.of(context).platformBrightness;
+    final isDarkMode = brightness == Brightness.dark;
     return SizedBox(
         height: 75,
         width: 75,
@@ -64,16 +66,16 @@ class _AddStory extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  bottom: 1.0,
+                  bottom: -1.0,
                   right: 0.0,
                   child: Container(
                     decoration: BoxDecoration(
-                        color: Colors.blue,
-                        border: Border.all(
-                            color: Colors.white,
-                            width: 3.0
-                        ),
-                        borderRadius: BorderRadius.circular(35.0)
+                      color: Colors.blue,
+                      border: Border.all(
+                        color: isDarkMode ? Colors.black : Colors.white,
+                        width: 4.0
+                      ),
+                      shape: BoxShape.circle
                     ),
                     child: const Icon(Icons.add, color: Colors.white),
                   ),

@@ -15,12 +15,24 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = MediaQuery.of(context).platformBrightness;
+    final isDarkMode = brightness == Brightness.dark;
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        title: const Image(
+        title: isDarkMode
+          ?
+        const Image(
           image: NetworkImage(
-              "https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
+            "https://cdn.kibrispdr.org/data/105/download-logo-instagram-putih-png-42.png"
+          ),
+          fit: BoxFit.cover,
+          height: 35,
+        )
+          :
+        const Image(
+          image: NetworkImage(
+            "https://logos-world.net/wp-content/uploads/2020/05/Instagram-Logo-2016-present.png"
           ),
           fit: BoxFit.cover,
           height: 80,
